@@ -1,6 +1,6 @@
 import { Sidebar } from "@/components/layout/Sidebar";
 import { Navbar } from "@/components/layout/Navbar";
-// import { About } from "@/components/sections/About";
+import { About } from "@/components/sections/About/About";
 // import { Resume } from "@/components/sections/Resume";
 // import { Portfolio } from "@/components/sections/Portfolio";
 // import { Blog } from "@/components/sections/Blog";
@@ -17,13 +17,13 @@ function App() {
       <main className="flex-1">
         <Navbar />
 
-        {/* <div className="space-y-16 mt-20 lg:mt-0">
+        <div className="space-y-16 mt-20 lg:mt-0">
           {activePage === "about" && <About />}
-          {activePage === "resume" && <Resume />}
+          {/* {activePage === "resume" && <Resume />}
           {activePage === "portfolio" && <Portfolio />}
           {activePage === "blog" && <Blog />}
-          {activePage === "contact" && <Contact />}
-        </div> */}
+          {activePage === "contact" && <Contact />} */}
+        </div>
       </main>
     </div>
   );
