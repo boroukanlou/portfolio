@@ -33,12 +33,9 @@ export function SidebarContent({ onNavigate }: SidebarContentProps) {
   ];
 
   return (
-    <div className="h-full bg-card border border-border rounded-2xl p-8 shadow-2xl flex flex-col item-center">
+    <div className="h-full bg-card border border-border rounded-2xl p-8 shadow-2xl flex flex-col items-center">
       <Avatar className="w-32 h-32 ring-4 ring-primary/20 ring-offset-8 ring-offset-background">
-        <AvatarImage
-          src="/assets/images/my-avatar.png"
-          alt="shahram boroukanlou"
-        />
+        <AvatarImage src="my-avatar.png" alt="shahram boroukanlou" />
         <AvatarFallback className="text-4xl font-bold bg-gradient-to-br from-primary to-orange-500 text-primary-forground">
           SB
         </AvatarFallback>
