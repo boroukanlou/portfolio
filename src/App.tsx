@@ -3,7 +3,7 @@ import { Sidebar } from "./components/layout/Sidebar";
 import { Navbar } from "./components/layout/Navbar";
 import { About } from "./components/sections/About/About";
 import { Resume } from "./components/sections/Resume/Resume";
-// import { Portfolio } from "./components/sections/Portfolio";
+import { Portfolio } from "./components/sections/Portfolio/Portfolio";
 // import { Blog } from "./components/sections/Blog";
 // import { Contact } from "./components/sections/Contact";
 import { useNavigationStore } from "./store/useNavigationStore";
@@ -41,8 +41,8 @@ export default function App() {
             <div className="p-10 pt-8">
               {activePage === "about" && <About />}
               {activePage === "resume" && <Resume />}
-              {/* {activePage === "portfolio" && <Portfolio />}
-               {activePage === "blog" && <Blog />}
+              {activePage === "portfolio" && <Portfolio />}
+              {/*{activePage === "blog" && <Blog />}
                {activePage === "contact" && <Contact />} */}
             </div>
           </article>
