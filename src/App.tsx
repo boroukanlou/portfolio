@@ -4,9 +4,9 @@ import { Navbar } from "./components/layout/Navbar";
 import { About } from "./components/sections/About/About";
 import { Resume } from "./components/sections/Resume/Resume";
 import { Portfolio } from "./components/sections/Portfolio/Portfolio";
-// import { Blog } from "./components/sections/Blog";
-// import { Contact } from "./components/sections/Contact";
+import { Contact } from "./components/sections/Contact/Contact";
 import { useNavigationStore } from "./store/useNavigationStore";
+import { Toaster } from "./components/ui/toaster";
 
 const pageTitles: Record<string, string> = {
   about: "About Me",
@@ -42,17 +42,16 @@ export default function App() {
               {activePage === "about" && <About />}
               {activePage === "resume" && <Resume />}
               {activePage === "portfolio" && <Portfolio />}
-              {/*{activePage === "blog" && <Blog />}
-               {activePage === "contact" && <Contact />} */}
+              {activePage === "contact" && <Contact />}
             </div>
           </article>
         </main>
       </div>
 
-      {/* Navbar برای موبایل (مینیمال، در پایین صفحه) */}
       <div className="lg:hidden">
         <Navbar />
       </div>
+      <Toaster />
     </div>
   );
 }

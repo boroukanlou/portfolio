@@ -15,7 +15,6 @@ const navItems = [
   { page: "about" as const, label: "About", icon: Home },
   { page: "resume" as const, label: "Resume", icon: User },
   { page: "portfolio" as const, label: "Portfolio", icon: FolderOpen },
-  { page: "blog" as const, label: "Blog", icon: BookOpen },
   { page: "contact" as const, label: "Contact", icon: Mail },
 ];
 
