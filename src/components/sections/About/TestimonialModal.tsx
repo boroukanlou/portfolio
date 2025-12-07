@@ -21,9 +21,7 @@ export function TestimonialModal({
         <button
           onClick={() => onOpenChange(false)}
           className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100"
-        >
-          <X className="h-6 w-6 text-muted-foreground" />
-        </button>
+        />
 
         <div className="flex gap-8">
           <div className="flex flex-col items-center">

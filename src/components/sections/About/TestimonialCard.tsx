@@ -15,7 +15,9 @@ export function TestimonialCard({
 }: TestimonialCardProps) {
   return (
     <Card
-      className="relative w-80 shrink-0 cursor-pointer overflow-hidden border-border bg-card/60 backdrop-blur-sm hover:bg-card/90 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5"
+      className="relative w-80 shrink-0 cursor-pointer overflow-hidden border-border
+      bg-card/60 backdrop-blur-sm hover:bg-card/90 transition-all duration-300 
+      hover:shadow-2xl hover:shadow-primary/5 min-w-[250px]"
       onClick={onClick}
     >
       <div
@@ -25,7 +27,7 @@ export function TestimonialCard({
       <div className="relative p-8">
         <Avatar
           className="w-20 h-20 ring-4 ring-primary/20 ring-offset-4 ring-offset-background
-        -mt-16 mx-auto"
+        -mt-1 mx-auto"
         >
           <AvatarImage src={avatar} />
           <AvatarFallback>
@@ -36,7 +38,7 @@ export function TestimonialCard({
           </AvatarFallback>
         </Avatar>
 
-        <h4 className="text-lg font-bold text-white text-center mt-6">
+        <h4 className="text-lg font-bold text-white text-center mt-3">
           {name}
         </h4>
         <p className="text-sm text-primary text-center mb-4">{role}</p>
