@@ -17,7 +17,7 @@ export const projects: Project[] = [
     description:
       "Large-scale enterprise web application for managing business processes, users, and real-time analytics.",
     category: "dashboard",
-    image: "/assets/images/projects/dadeh-kavan.jpg",
+    image: "omnifood.png",
     technologies: [
       "React 18",
       "Redux",
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     description:
       "Platform for managing medical representatives with real-time location tracking and visit scheduling.",
     category: "map",
-    image: "/assets/images/projects/arena.jpg",
+    image: "natours.png",
     technologies: ["React", "Material UI", "Leaflet", "Axios", "Redux"],
     features: [
       "Interactive Leaflet maps with real-time geolocation",
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     description:
       "Modern CRM with visit tracking, customer management and analytics using Vite + Styled Components.",
     category: "dashboard",
-    image: "/assets/images/projects/crm.jpg",
+    image: "maze.png",
     technologies: [
       "Vite",
       "React",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     description:
       "Mobile-first PWA for field agents to log visits with automatic location capture and photo upload.",
     category: "mobile",
-    image: "/assets/images/projects/geovisit.jpg",
+    image: "ecoreserve.png",
     technologies: ["React", "PWA", "Leaflet", "Camera API", "IndexedDB"],
     liveUrl: "https://geovisit.app",
     features: [

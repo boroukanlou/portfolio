@@ -27,7 +27,7 @@ export function Portfolio() {
   return (
     <div>
       <div className="glass-card p-8 md:p-12 rounded-3xl shadow-2xl">
-        <div className="flex flex-wrap gap-3 mb-12">
+        <div className="flex flex-wrap gap-2 mb-10">
           {categories.map((cat) => (
             <Button
               key={cat.value}

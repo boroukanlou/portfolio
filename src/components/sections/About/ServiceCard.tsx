@@ -5,8 +5,7 @@ export function ServiceCard({ title, description, icon: Icon }: Service) {
   return (
     <Card
       className="group relative overflow-hidden border-border bg-card/50 backdrop-blur-sm
-      hover:bg-card/80 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10
-      max-w-[200px] w-full"
+  hover:bg-card/80 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 w-full p-6"
     >
       <div
         className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0

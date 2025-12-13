@@ -29,7 +29,7 @@ export default function App() {
         <main className="flex-1 max-w-4xl w-full mx-auto">
           <article className="relative bg-card/80 backdrop-blur-xl border border-border rounded-3xl shadow-2xl overflow-hidden">
             <header className="relative px-8 pt-8 pb-6 border-b border-border/50">
-              <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary via-orange-400 to-yellow-500 bg-clip-text text-transparent mb-16">
+              <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary via-orange-400 to-yellow-500 bg-clip-text text-transparent mb-10">
                 {title}
               </h1>
 
@@ -38,7 +38,7 @@ export default function App() {
               </div>
             </header>
 
-            <div className="p-10 pt-8">
+            <div className="p-1 pt-0 lg:p-10  lg:pt-8">
               {activePage === "about" && <About />}
               {activePage === "resume" && <Resume />}
               {activePage === "portfolio" && <Portfolio />}

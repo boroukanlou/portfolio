@@ -18,10 +18,10 @@ export function ProjectModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-5xl bg-card/95 backdrop-blur-xl border-border p-0 overflow-hidden">
+      <DialogContent className="max-h-[calc(100vh-10px)] sm:max-h-[calc(100vh-80px)] max-w-5xl  bg-card/95 backdrop-blur-xl border-border p-0 overflow-hidden">
         <button
           onClick={() => onOpenChange(false)}
-          className="absolute right-4 top-4 z-10 rounded-full bg-background/80 p-2 hover:bg-background"
+          className="absolute right-4 top-4 z-10 rounded-full bg-background/80 p-2 hover:bg-background text-white"
         >
           <X className="w-5 h-5" />
         </button>
@@ -36,7 +36,7 @@ export function ProjectModal({
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
           </div>
 
-          <div className="p-8 md:p-12 space-y-8">
+          <div className="p-8 md:p-12 space-y-8 overflow-y-auto max-h-[calc(100vh-80px)]">
             <div>
               <h2 className="text-4xl font-bold text-white mb-4">
                 {project.title}

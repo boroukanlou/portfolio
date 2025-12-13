@@ -1,4 +1,4 @@
-import { Palette, Code2, Smartphone, Camera } from "lucide-react";
+import { Palette, Users, Gauge, FileText, LayoutDashboard } from "lucide-react";
 
 export interface Service {
   title: string;
@@ -16,28 +16,28 @@ export interface Testimonial {
 
 export const services: Service[] = [
   {
-    title: "Web Design",
+    title: "Enterprise Front-End Development",
     description:
-      "Modern, pixel-perfect and fully responsive designs crafted with the latest trends and best UX practices.",
-    icon: Palette,
+      "Building scalable and maintainable front-end architectures for complex enterprise and financial applications, with a strong focus on performance, reliability, and long-term maintainability.",
+    icon: LayoutDashboard,
   },
   {
-    title: "Front-End Development",
+    title: "Data-Driven Interfaces & Complex Forms",
     description:
-      "High-performance, maintainable and scalable web applications built with React, TypeScript and modern tooling.",
-    icon: Code2,
+      "Designing and implementing multi-step forms, advanced validation flows, and data-heavy dashboards that transform complex user input and sensitive data into clear and trustworthy user experiences.",
+    icon: FileText,
   },
   {
-    title: "Mobile-First & PWA",
+    title: "Performance, Architecture & UX",
     description:
-      "Progressive Web Apps and mobile-optimized experiences that work flawlessly across all devices.",
-    icon: Smartphone,
+      "Focusing on clean architecture, optimized rendering, and accessible UI patterns to deliver fast, consistent, and user-friendly interfaces across modern web applications.",
+    icon: Gauge,
   },
   {
-    title: "Data Visualization & Maps",
+    title: "Product-Oriented Front-End Engineering",
     description:
-      "Interactive dashboards, charts and geospatial applications using Leaflet, Chart.js and advanced React patterns.",
-    icon: Camera,
+      "Collaborating closely with product managers, designers, and backend teams to translate business requirements into well-structured, user-centered front-end solutions that support long-term product growth.",
+    icon: Users,
   },
 ];
 

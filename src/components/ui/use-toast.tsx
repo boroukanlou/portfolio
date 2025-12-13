@@ -13,10 +13,12 @@ const toast = () => {
   return toast;
 };
 
+console.log(toast);
+
 export function useToast() {
   return {
     toast: ({ title, description, variant = "default" }: Partial<Toast>) => {
-      console.log("Toast:", title, description);
+      console.log("Toast:", title, description, variant);
     },
   };
 }

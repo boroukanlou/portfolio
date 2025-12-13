@@ -15,9 +15,9 @@ export function TestimonialCard({
 }: TestimonialCardProps) {
   return (
     <Card
-      className="relative w-80 shrink-0 cursor-pointer overflow-hidden border-border
-      bg-card/60 backdrop-blur-sm hover:bg-card/90 transition-all duration-300 
-      hover:shadow-2xl hover:shadow-primary/5 min-w-[250px]"
+      className="relative w-64 sm:w-80 shrink-0 cursor-pointer overflow-hidden border-border
+  bg-card/60 backdrop-blur-sm hover:bg-card/90 transition-all duration-300 
+  hover:shadow-2xl hover:shadow-primary/5"
       onClick={onClick}
     >
       <div

@@ -1,13 +1,6 @@
 // src/components/layout/Navbar.tsx
 import { Button } from "@/components/ui/button";
-import {
-  Home,
-  User,
-  Briefcase,
-  FolderOpen,
-  BookOpen,
-  Mail,
-} from "lucide-react";
+import { Home, User, FolderOpen, Mail } from "lucide-react";
 import { useNavigationStore } from "@/store/useNavigationStore";
 import { cn } from "@/lib/utils";
 
@@ -32,7 +25,7 @@ export function Navbar() {
               variant="ghost"
               size="sm"
               className={cn(
-                "relative px-5 py-2.5 rounded-xl font-medium transition-all",
+                "relative px-5 py-2.5 rounded-xl text-base font-semibold transition-all",
                 isActive
                   ? "text-primary bg-primary/10"
                   : "text-muted-foreground hover:text-foreground"

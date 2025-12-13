@@ -7,34 +7,27 @@ export interface TimelineItem {
 }
 
 export interface Skill {
-  name: string;
-  level: number;
+  title: string;
+  items: string[];
+  delay?: number;
 }
 
 export const timelineData: TimelineItem[] = [
   {
-    title: "Front-End Developer (React 17 → 18)",
+    title: "Front-End Engineer",
     company: "Dadeh Kavan Pishro",
-    period: "Oct 2024 – Present",
-    description:
-      "Led migration from React 17 to 18, implemented React Query, optimized performance with lazy loading and code splitting, built enterprise dashboard with Material UI.",
+    period: "2023 – Present",
     type: "experience",
+    description:
+      "Working on enterprise-level financial applications with a focus on scalable React-based front-end architecture. Recently contributed to a Credit Scoring platform by implementing complex multi-step forms, advanced validation flows, and data-driven dashboards. Collaborated closely with backend and product teams to deliver performant, maintainable, and user-centered solutions.",
   },
   {
     title: "Front-End Developer",
-    company: "Arena Life Science",
-    period: "Dec 2023 – Jul 2024",
-    description:
-      "Built medical representative management system with real-time Leaflet maps, dynamic forms, and responsive UI using Material UI.",
+    company: "Arena",
+    period: "2022 – 2023",
     type: "experience",
-  },
-  {
-    title: "CRM Dashboard Developer",
-    company: "Freelance Project",
-    period: "Dec 2023 – Jul 2024",
     description:
-      "Developed modern CRM using Vite + React + Styled Components. Implemented interactive visit tracking with Leaflet and real-time data sync.",
-    type: "experience",
+      "Developed and maintained web applications across medical platforms, internal CRM systems, and real-time dashboards. Focused on building clean, reusable UI components, improving application performance, and delivering consistent user experiences within cross-functional teams.",
   },
   {
     title: "M.Sc. Remote Sensing & GIS",
@@ -55,12 +48,44 @@ export const timelineData: TimelineItem[] = [
 ];
 
 export const skills: Skill[] = [
-  { name: "React / Next.js", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "Redux / Zustand", level: 92 },
-  { name: "Tailwind CSS", level: 96 },
-  { name: "Material UI / shadcn", level: 94 },
-  { name: "Leaflet / GIS", level: 88 },
-  { name: "React Query / TanStack", level: 90 },
-  { name: "Performance Optimization", level: 93 },
+  {
+    title: "Core Front-End",
+    items: [
+      "React",
+      "TypeScript",
+      "Modern JavaScript (ES6+)",
+      "Component-Driven Architecture",
+    ],
+    delay: 0,
+  },
+  {
+    title: "State & Data Management",
+    items: [
+      "Redux",
+      "Zustand",
+      "React Query / TanStack Query",
+      "Server State Management",
+    ],
+    delay: 1,
+  },
+  {
+    title: "Styling & UI Systems",
+    items: ["Tailwind CSS", "shadcn/ui", "Material UI", "Design Systems"],
+    delay: 2,
+  },
+  {
+    title: "Performance & Quality",
+    items: [
+      "Performance Optimization",
+      "Rendering Optimization",
+      "Reusable UI Patterns",
+      "Accessibility (a11y)",
+    ],
+    delay: 3,
+  },
+  {
+    title: "Maps & Specialized Domains",
+    items: ["Leaflet", "GIS-Based Interfaces", "Geospatial Data Visualization"],
+    delay: 4,
+  },
 ];

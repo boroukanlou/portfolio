@@ -10,20 +10,15 @@ import {
   Twitter,
   Instagram,
 } from "lucide-react";
-import { useNavigationStore } from "@/store/useNavigationStore";
+// import { useNavigationStore } from "@/store/useNavigationStore";
 
 interface SidebarContentProps {
   onNavigate?: () => void;
 }
 
 export function SidebarContent({ onNavigate }: SidebarContentProps) {
-  const { setActivePage } = useNavigationStore();
-
-  const handleNavClick = (page: Parameters<typeof setActivePage>[0]) => {
-    setActivePage(page);
-    onNavigate?.();
-    window.scrollTo(0, 0);
-  };
+  console.log(onNavigate);
+  // const { setActivePage } = useNavigationStore();
 
   const socialLinks = [
     { Icon: Github, href: "https://github.com/boroukanlou" },

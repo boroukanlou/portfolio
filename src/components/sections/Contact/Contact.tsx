@@ -62,6 +62,7 @@ export function Contact() {
 
         EMAILJS_PUBLIC_KEY
       );
+      console.log(result);
 
       toast({
         title: "Message sent successfully!",

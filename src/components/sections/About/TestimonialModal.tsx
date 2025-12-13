@@ -1,7 +1,7 @@
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { X } from "lucide-react";
 import type { Testimonial } from "@/data/aboutData";
+import { X } from "lucide-react";
 
 interface TestimonialModalProps {
   testimonial: Testimonial | null;
@@ -17,11 +17,17 @@ export function TestimonialModal({
   if (!testimonial) return null;
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-2xl bg-card/95 backdrop-blur-xl border-border">
+      <DialogContent className="w-[95vw] sm:max-w-2xl bg-card/95 backdrop-blur-xl border-border rounded-md p-6 sm:p-8">
+        {/* <button
+          onClick={() => onOpenChange(false)}
+          className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 "
+        /> */}
         <button
           onClick={() => onOpenChange(false)}
-          className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100"
-        />
+          className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 text-white"
+        >
+          <X className="h-4 w-4" />
+        </button>
 
         <div className="flex gap-8">
           <div className="flex flex-col items-center">

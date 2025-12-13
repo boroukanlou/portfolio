@@ -8,9 +8,9 @@ export function Resume() {
   const education = timelineData.filter((item) => item.type === "education");
 
   return (
-    <Card className="bg-card/80 backdrop-blur-md border-border rounded-3xl p-8 md:p-12 shadow-2xl">
+    <Card className="bg-card/80 backdrop-blur-md border-border rounded-3xl lg:p-8 p-3 md:p-12 shadow-2xl">
       <section className="mb-20">
-        <h3 className="text-4xl font-bold bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent mb-12">
+        <h3 className="text-2xl lg:text-2xl font-bold bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent mb-12">
           Experience
         </h3>
         <div className="relative">
@@ -21,7 +21,7 @@ export function Resume() {
       </section>
 
       <section className="mb-20">
-        <h3 className="text-4xl font-bold bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent mb-12">
+        <h3 className=" text-2xl font-bold bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent mb-12">
           Education
         </h3>
         <div className="relative">
@@ -32,12 +32,18 @@ export function Resume() {
       </section>
 
       <section>
-        <h3 className="text-4xl font-bold bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent mb-12">
+        <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent mb-12">
           Skills
         </h3>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
-          {skills.map((skill, i) => (
-            <SkillBar key={i} {...skill} delay={i} />
+          {skills.map((group, i) => (
+            <SkillBar
+              key={i}
+              title={group.title}
+              items={group.items}
+              delay={group.delay}
+            />
           ))}
         </div>
       </section>

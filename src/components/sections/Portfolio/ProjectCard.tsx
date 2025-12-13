@@ -13,7 +13,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
     <motion.div
       whileHover={{ y: -12 }}
       transition={{ duration: 0.4 }}
-      className="flex-none w-96"
+      className="flex-none w-60 lg:w-96"
     >
       <div
         className="glass-card rounded-3xl overflow-hidden cursor-pointer group glow-hover"
