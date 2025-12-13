@@ -1,4 +1,3 @@
-// src/components/layout/ContactItem.tsx
 import type { ReactNode } from "react";
 
 interface ContactItemProps {

@@ -1,16 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ContactItem } from "./ContactItem";
-import {
-  Mail,
-  Phone,
-  Calendar,
-  MapPin,
-  Github,
-  Linkedin,
-  Twitter,
-  Instagram,
-} from "lucide-react";
-// import { useNavigationStore } from "@/store/useNavigationStore";
+import { Mail, Phone, Calendar, MapPin, Github, Linkedin } from "lucide-react";
 
 interface SidebarContentProps {
   onNavigate?: () => void;
@@ -18,13 +8,10 @@ interface SidebarContentProps {
 
 export function SidebarContent({ onNavigate }: SidebarContentProps) {
   console.log(onNavigate);
-  // const { setActivePage } = useNavigationStore();
 
   const socialLinks = [
     { Icon: Github, href: "https://github.com/boroukanlou" },
     { Icon: Linkedin, href: "https://linkedin.com/in/boroukanlou" },
-    { Icon: Twitter, href: "https://twitter.com" },
-    { Icon: Instagram, href: "https://instagram.com" },
   ];
 
   return (

@@ -1,4 +1,3 @@
-// src/components/layout/Navbar.tsx
 import { Button } from "@/components/ui/button";
 import { Home, User, FolderOpen, Mail } from "lucide-react";
 import { useNavigationStore } from "@/store/useNavigationStore";

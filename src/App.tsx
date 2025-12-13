@@ -1,4 +1,3 @@
-// src/App.tsx
 import { Sidebar } from "./components/layout/Sidebar";
 import { Navbar } from "./components/layout/Navbar";
 import { About } from "./components/sections/About/About";

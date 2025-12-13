@@ -47,8 +47,10 @@ export function ProjectModal({
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-4">Key Features</h3>
-              <ul className="space-y-auto max-h-48 pr-4 space-y-3">
+              <h3 className="text-xl text-white font-semibold mb-4">
+                Key Features
+              </h3>
+              <ul className="space-y-auto max-h-48 pr-4 space-y-3 overflow-y-auto">
                 {project.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <span className="text-primary mt-1">▹</span>
@@ -59,7 +61,9 @@ export function ProjectModal({
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-4">Technologies</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">
+                Technologies
+              </h3>
               <div className="flex flex-wrap gap-3">
                 {project.technologies.map((tech) => (
                   <Badge
@@ -86,7 +90,7 @@ export function ProjectModal({
                 <a
                   href={project.githubUrl}
                   target="_blank"
-                  className="flex items-center gap-2 border border-border px-6 py-3 rounded-lg hover:bg-secondary transition"
+                  className="flex items-center bg-white gap-2 border border-border px-6 py-3 rounded-lg hover:bg-secondary transition"
                 >
                   <Github className="w-4 h-4" /> Source Code
                 </a>

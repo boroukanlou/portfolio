@@ -1,4 +1,3 @@
-// src/components/layout/Sidebar.tsx
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
@@ -10,7 +9,6 @@ export function Sidebar() {
 
   return (
     <>
-      {/* Mobile Menu Button */}
       <Sheet
         open={isSidebarOpen}
         onOpenChange={(open) => (open ? toggleSidebar() : closeSidebar())}
@@ -30,7 +28,6 @@ export function Sidebar() {
         </SheetContent>
       </Sheet>
 
-      {/* Desktop Sidebar */}
       <aside className="hidden lg:block w-80">
         <SidebarContent />
       </aside>

@@ -16,6 +16,7 @@ export function AutoScrollFrame({
 }: AutoScrollFrameProps) {
   const [isHovered, setIsHovered] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const animationRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (!isHovered || !scrollRef.current) return;
@@ -26,7 +27,6 @@ export function AutoScrollFrame({
 
     let start: number | null = null;
     const duration = 16000;
-
     const animateScroll = (timestamp: number) => {
       if (!start) start = timestamp;
 
@@ -34,17 +34,22 @@ export function AutoScrollFrame({
 
       if (progress < 1) {
         scrollElement.scrollTop = progress * scrollHeight;
-        requestAnimationFrame(animateScroll);
+        animationRef.current = requestAnimationFrame(animateScroll);
       } else {
-        start = null;
-        requestAnimationFrame(animateScroll);
+        if (scrollRef.current) scrollRef.current.scrollTop = scrollHeight;
       }
     };
 
-    requestAnimationFrame(animateScroll);
+    animationRef.current = requestAnimationFrame(animateScroll);
 
     return () => {
-      start = null;
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+        animationRef.current = null;
+      }
+      if (scrollRef.current) {
+        scrollRef.current.scrollTop = 0;
+      }
     };
   }, [isHovered]);
 

@@ -12,6 +12,7 @@ export function Portfolio() {
     null | (typeof projects)[0]
   >(null);
   const [filter, setFilter] = useState<Category>("all");
+  const [hovered, setHovered] = useState(false);
 
   const filteredProjects =
     filter === "all" ? projects : projects.filter((p) => p.category === filter);
@@ -21,7 +22,6 @@ export function Portfolio() {
     { value: "dashboard", label: "Dashboards" },
     { value: "webapp", label: "Web Apps" },
     { value: "map", label: "Map-Based" },
-    { value: "mobile", label: "Mobile & PWA" },
   ];
 
   return (
@@ -40,16 +40,27 @@ export function Portfolio() {
           ))}
         </div>
 
-        <ScrollArea className="w-full">
+        <ScrollArea
+          className="w-full"
+          onWheel={(e) => {
+            if (!hovered) e.preventDefault();
+          }}
+        >
           <div className="flex gap-8 pb-8">
             {filteredProjects.map((project) => (
-              <ProjectCard
+              <div
                 key={project.id}
-                project={project}
-                onClick={() => setSelectedProject(project)}
-              />
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+              >
+                <ProjectCard
+                  project={project}
+                  onClick={() => setSelectedProject(project)}
+                />
+              </div>
             ))}
           </div>
+
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
       </div>

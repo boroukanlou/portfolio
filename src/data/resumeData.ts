@@ -70,7 +70,13 @@ export const skills: Skill[] = [
   },
   {
     title: "Styling & UI Systems",
-    items: ["Tailwind CSS", "shadcn/ui", "Material UI", "Design Systems"],
+    items: [
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Material UI",
+      "Design Systems",
+      "Styled-components",
+    ],
     delay: 2,
   },
   {
