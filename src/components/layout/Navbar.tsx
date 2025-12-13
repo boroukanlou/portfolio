@@ -27,7 +27,7 @@ export function Navbar() {
                 "relative px-5 py-2.5 rounded-xl text-base font-semibold transition-all",
                 isActive
                   ? "text-primary bg-primary/10"
-                  : "text-muted-foreground hover:text-foreground"
+                  : "text-white hover:text-foreground"
               )}
               onClick={() => setActivePage(page)}
             >
