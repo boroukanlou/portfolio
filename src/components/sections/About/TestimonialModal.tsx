@@ -33,7 +33,7 @@ export function TestimonialModal({
                 {testimonial.name.split(" ")[0][0]}
               </AvatarFallback>
             </Avatar>
-            <div className="w-12 h-12 mt-6 bg-gradient-to-br from-primary to-orange-500 rounded-full" />
+            <div className="w-12 h-12 mt-6 bg-gradient-to-br from-primary to-blue-950 rounded-full" />
           </div>
           <div className="flex-1">
             <h3 className="text-2xl font-bold text-white">

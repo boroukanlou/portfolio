@@ -10,7 +10,7 @@ export function Resume() {
   return (
     <Card className="bg-card/80 backdrop-blur-md border-border rounded-3xl lg:p-8 p-3 md:p-12 shadow-2xl">
       <section className="mb-20">
-        <h3 className="text-2xl lg:text-2xl font-bold bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent mb-12">
+        <h3 className="text-2xl lg:text-2xl font-bold bg-gradient-to-r from-primary to-blue-950 bg-clip-text text-transparent mb-12">
           Experience
         </h3>
         <div className="relative">
@@ -21,7 +21,7 @@ export function Resume() {
       </section>
 
       <section className="mb-20">
-        <h3 className=" text-2xl font-bold bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent mb-12">
+        <h3 className=" text-2xl font-bold bg-gradient-to-r from-primary to-blue-950 bg-clip-text text-transparent mb-12">
           Education
         </h3>
         <div className="relative">
@@ -32,7 +32,7 @@ export function Resume() {
       </section>
 
       <section>
-        <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent mb-12">
+        <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-950 bg-clip-text text-transparent mb-12">
           Skills
         </h3>
 
