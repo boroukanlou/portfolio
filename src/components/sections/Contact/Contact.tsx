@@ -19,9 +19,9 @@ import { useToast } from "@/components/ui/use-toast";
 import { Send, MapPin, Mail, Phone } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
-export const EMAILJS_SERVICE_ID = "your_serviceId";
-export const EMAILJS_TEMPLATE_ID = "your_templateId";
-export const EMAILJS_PUBLIC_KEY = "your_public_Key";
+export const EMAILJS_SERVICE_ID = "service_l4suynm";
+export const EMAILJS_TEMPLATE_ID = "template_mmz8ncp";
+export const EMAILJS_PUBLIC_KEY = "mnHuNdTB12vHldGEg";
 
 emailjs.init(EMAILJS_PUBLIC_KEY);
 
