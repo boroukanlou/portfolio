@@ -26,7 +26,7 @@ export function SidebarContent({ onNavigate }: SidebarContentProps) {
       <h1 className="text-3xl font-bold mt-6 text-white text-center leading-tight">
         Shahram Boroukanlou
       </h1>
-      <p className="text-sm bg-primary/20 text-primary px-5 py-2 rounded-full mt-3 font-medium">
+      <p className="text-sm bg-primary/20 text-white px-5 py-2 rounded-full mt-3 font-medium">
         Web Developer
       </p>
 
