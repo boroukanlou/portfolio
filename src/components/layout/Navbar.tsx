@@ -34,7 +34,7 @@ export function Navbar() {
               <Icon className="w-4 h-4 mr-2" />
               {label}
               {isActive && (
-                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-10 h-1 bg-gradient-to-r from-primary to-orange-500 rounded-full" />
+                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-10 h-1 bg-gradient-to-r from-primary to-blue-950 rounded-full" />
               )}
             </Button>
           );
