@@ -43,35 +43,35 @@ export const services: Service[] = [
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Amir Hosseini",
-    role: "CTO at Dadeh Kavan Pishro",
+    name: "John Doe",
+    role: "CTO at Company",
     content:
-      "Shahram played a key role in migrating our legacy React 17 app to React 18 with zero downtime. His attention to performance, code quality and best practices significantly improved both developer experience and app speed. Highly recommended!",
-    avatar: "/assets/images/avatar-1.png",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
+    avatar: "Avatar2.png",
     date: "November 2024",
   },
   {
-    name: "Sara Ahmadi",
-    role: "Product Manager at Arena Life Science",
+    name: "Alexis Hawkins",
+    role: "Product Manager at Company",
     content:
-      "Working with Shahram was an absolute pleasure. He delivered complex forms, real-time location tracking with Leaflet, and a beautiful responsive UI — all on time and with excellent communication. A true professional.",
-    avatar: "/assets/images/avatar-2.png",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.",
+    avatar: "Avatar1.png",
     date: "June 2024",
   },
   {
-    name: "Mohammad Rezaei",
+    name: "Raven Dixon",
     role: "Lead Developer — CRM Project",
     content:
-      "Shahram built our entire CRM dashboard from scratch using Vite + React + Styled Components. The interactive map feature for field visits works perfectly on mobile devices. Clean code, great performance, and super reliable.",
-    avatar: "/assets/images/avatar-3.png",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.",
+    avatar: "Avatar3.png",
     date: "May 2024",
   },
   {
-    name: "Nima Karimi",
+    name: "Parker McGee",
     role: "Freelance Client",
     content:
-      "Needed a fast, modern portfolio with animations and dark mode. Shahram over-delivered — the site loads in under 1s, looks stunning, and ranks great on Lighthouse. Will definitely hire again!",
-    avatar: "/assets/images/avatar-4.png",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.",
+    avatar: "Avatar4.png",
     date: "March 2024",
   },
 ];
