@@ -17,8 +17,10 @@ export function About() {
         <div className="max-w-3xl mx-auto space-y-10 text-base sm:text-lg leading-relaxed text-gray-300">
           <p>
             Hi, I'm{" "}
-            <span className="font-bold text-white">Shahram Boroukanlou</span> —
-            a dedicated{" "}
+            <span className="font-bold text-white">
+              Shahram Boroukanlou Milani
+            </span>{" "}
+            — a dedicated{" "}
             <span className="text-primary font-semibold">
               Front-End Engineer
             </span>{" "}
