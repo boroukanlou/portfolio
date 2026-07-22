@@ -53,7 +53,7 @@ export const projects: Project[] = [
     category: "map",
     image: "maze.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Matter.js"],
-    liveUrl: "https://maze-shahin.netlify.app/",
+    liveUrl: "https://shahin-maze.netlify.app/",
     githubUrl: "https://github.com/boroukanlou/javascript-basic-03-maze",
     features: [
       "Procedurally generated maze using depth-first search algorithm",
